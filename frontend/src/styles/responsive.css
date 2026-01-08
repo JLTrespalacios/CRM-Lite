@@ -1,0 +1,33 @@
+/* Responsive Adjustments */
+
+/* Mobile Navigation Toggle */
+@media (max-width: 1024px) {
+  .sidebar-mobile-open {
+    @apply translate-x-0 shadow-2xl;
+  }
+  
+  .sidebar-mobile-closed {
+    @apply -translate-x-full;
+  }
+  
+  .sidebar-backdrop {
+    @apply fixed inset-0 bg-gray-900/50 z-40 backdrop-blur-sm transition-opacity;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .sidebar, .top-header, .no-print {
+    display: none !important;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+}

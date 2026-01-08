@@ -1,0 +1,36 @@
+/* Page Specific Styles */
+
+/* Dashboard */
+.dashboard-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8;
+}
+
+.stat-card {
+  @apply card p-6 flex flex-col justify-between h-full hover:shadow-md transition-shadow;
+}
+
+.stat-icon-wrapper {
+  @apply p-3 rounded-xl w-fit mb-4;
+}
+
+/* Login & Register */
+.auth-container {
+  @apply min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8;
+}
+
+.auth-card {
+  @apply mt-8 sm:mx-auto sm:w-full sm:max-w-md bg-white py-8 px-4 shadow-xl shadow-indigo-100 rounded-2xl sm:px-10 border border-gray-100;
+}
+
+.auth-header {
+  @apply sm:mx-auto sm:w-full sm:max-w-md text-center mb-6;
+}
+
+/* Profile */
+.profile-header {
+  @apply relative h-48 bg-gradient-to-r from-indigo-600 to-indigo-800 rounded-t-2xl;
+}
+
+.profile-avatar-wrapper {
+  @apply absolute -bottom-12 left-8 p-1.5 bg-white rounded-full shadow-md;
+}

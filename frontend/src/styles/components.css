@@ -1,0 +1,132 @@
+/* Components (Buttons, Cards, Inputs) */
+
+/* Cards */
+.card {
+  @apply bg-white rounded-xl border border-slate-200 overflow-hidden relative;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1; /* slate-300 */
+}
+
+/* Static card option for when we don't want movement */
+.card-static {
+  @apply bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm;
+}
+
+.card-header {
+  @apply px-6 py-4 border-b border-slate-100 flex items-center justify-between bg-white;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 rounded-lg text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  @apply bg-indigo-600 text-white;
+  box-shadow: var(--shadow-indigo); /* Modern colored shadow */
+}
+
+.btn-primary:hover {
+  @apply bg-indigo-700;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  @apply bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 hover:text-slate-900 focus:ring-slate-200;
+}
+
+.btn-danger {
+  @apply bg-white text-red-600 border border-red-200 hover:bg-red-50 hover:border-red-300;
+}
+
+.btn-ghost {
+  @apply text-slate-500 hover:text-slate-700 hover:bg-slate-100;
+}
+
+.btn-icon {
+  @apply p-2 rounded-lg transition-colors;
+}
+
+/* Inputs */
+.input-group {
+  @apply space-y-1.5;
+}
+
+.input-label {
+  @apply block text-sm font-medium text-slate-700 mb-1;
+}
+
+.input-field {
+  @apply block w-full px-4 py-2.5 border border-slate-300 rounded-lg text-sm transition-all;
+  background-color: #fff;
+}
+
+.input-field:focus {
+  @apply border-indigo-500 ring-4 ring-indigo-500/10 outline-none;
+}
+
+.input-field-error {
+  @apply border-red-300 text-red-900 placeholder-red-300 focus:ring-red-500/10 focus:border-red-500;
+}
+
+/* Tables */
+.table-container {
+  @apply overflow-hidden rounded-xl border border-slate-200 shadow-sm bg-white;
+}
+
+.table-base {
+  @apply w-full text-left border-collapse;
+}
+
+.table-head {
+  @apply bg-slate-50 border-b border-slate-200;
+}
+
+.table-th {
+  @apply px-6 py-4 text-xs font-semibold text-slate-500 uppercase tracking-wider;
+}
+
+.table-row {
+  @apply hover:bg-slate-50/50 transition-colors border-b border-slate-100 last:border-0;
+}
+
+.table-td {
+  @apply px-6 py-4 whitespace-nowrap text-sm text-slate-700;
+}
+
+/* Badges */
+.badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border shadow-sm;
+}
+
+.badge-success {
+  @apply bg-emerald-50 text-emerald-700 border-emerald-200;
+}
+
+.badge-warning {
+  @apply bg-amber-50 text-amber-700 border-amber-200;
+}
+
+.badge-danger {
+  @apply bg-rose-50 text-rose-700 border-rose-200;
+}
+
+.badge-neutral {
+  @apply bg-slate-100 text-slate-600 border-slate-200;
+}
