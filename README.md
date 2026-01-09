@@ -102,5 +102,4 @@ npm run dev
 - **Validación**: Prevención de citas duplicadas y fechas pasadas.
 - **Auth**: Tokens JWT con expiración de 1 día.
 
----
-Desarrollado con ❤️ para optimizar tu negocio.
+https://cmrlife.leonardotrespalacios.dev/login
